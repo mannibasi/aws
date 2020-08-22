@@ -13,7 +13,7 @@ Resources:
     Type: 'AWS::EC2::Instance'
     Properties:
       InstanceType: t2.micro
-      ImageId: ami-0bdb1d6c15a40392c
+      ImageId: ami-02354e95b39ca8dec #update AMI to match region else it won't work (this is a us-east-1 AMI)
       KeyName: !Ref KeyName
       SecurityGroups:
        - Ref: InstanceSecurityGroup
